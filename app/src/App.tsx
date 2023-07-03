@@ -13,10 +13,6 @@ import {getFromSQLite} from './storages/SQLite';
 import {getFromWatermelonDB} from './storages/WatermelonDB';
 import {getFromMMKVEncrypted} from './storages/MMKVEncrypted';
 
-declare global {
-  const performance: {now: () => number};
-}
-
 const iterations = 1000;
 
 async function benchmark(
